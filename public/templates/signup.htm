@@ -1,0 +1,19 @@
+<div class="bgContainer"> 
+    <div class="form">
+        <input type="text" placeholder="User Name" id="uname">
+        <input type="password" placeholder="Password" maxlength="8" id="upwd">
+        <input type="password" placeholder="Confirm Password" maxlength="8" id="upwd_c">
+        <input type="text" placeholder="Contact      " maxlength="10" id="ucontact">
+        <input type="text" placeholder="email id" id="umailid">
+        
+        <button onclick="readUserInfo()">Create</button>
+        <p class="message">Already Registered? <a href="#" onclick="showPage('login')">log in</a></p>
+        <div id="signupSuccessblock">
+            User got Registered successfly...
+            <span class="link" onclick="showPage('login')">Back to Login Page</span>
+        </div>
+        <div id="signupError">
+            User with sameid already exists
+        </div>
+    </div>
+</div>
